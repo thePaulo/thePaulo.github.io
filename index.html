@@ -96,7 +96,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/girl.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/girl.png" alt="..." style="height: 400px;width: 400px;"/>
                         </div>
                     </div>
                     <!-- Portfolio Item 5-->
@@ -163,7 +163,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Divide 4 areas</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -171,9 +171,13 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/atvd2.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    
+                                        <p class="mb-4" style="background-color: dimgray;">
+                                            <code id="data" class="xml hljs">import cv2<br>import numpy as np<br>import matplotlib.pyplot as plt<br><br>img = cv2.imread('geto.jpg')<br><br>heigth = img.shape[0]<br>width = img.shape[1]<br><br>blank_image = np.zeros((heigth,width,3), np.uint8)<br>for i in range(heigth):<br>  for j in range(width):<br>      if(i <span class="hljs-tag">&lt; <span class="hljs-attr">heigth</span>/<span class="hljs-attr">2</span> <span class="hljs-attr">and</span> <span class="hljs-attr">j</span> &lt; <span class="hljs-attr">width</span>/<span class="hljs-attr">2</span>)<span class="hljs-attr">:</span></span><br><span class="hljs-tag">           <span class="hljs-attr">blank_image</span>[<span class="hljs-attr">i</span>,<span class="hljs-attr">j</span>,<span class="hljs-attr">0</span>] = <span class="hljs-string">img[int(i+heigth/2),int(j+width/2),0]</span></span><br><span class="hljs-tag">           <span class="hljs-attr">blank_image</span>[<span class="hljs-attr">i</span>,<span class="hljs-attr">j</span>,<span class="hljs-attr">1</span>] = <span class="hljs-string">img[int(i+heigth/2),int(j+width/2),1]</span></span><br><span class="hljs-tag">           <span class="hljs-attr">blank_image</span>[<span class="hljs-attr">i</span>,<span class="hljs-attr">j</span>,<span class="hljs-attr">2</span>] = <span class="hljs-string">img[int(i+heigth/2),int(j+width/2),2]</span></span><br><span class="hljs-tag">       <span class="hljs-attr">if</span>(<span class="hljs-attr">i</span> &lt; <span class="hljs-attr">heigth</span>/<span class="hljs-attr">2</span> <span class="hljs-attr">and</span> <span class="hljs-attr">j</span> &gt;</span> width/2):<br>            blank_image[i,j,0] = img[int(i+heigth/2),int(j-width/2),0]<br>          blank_image[i,j,1] = img[int(i+heigth/2),int(j-width/2),1]<br>          blank_image[i,j,2] = img[int(i+heigth/2),int(j-width/2),2]<br>      if(i &gt; heigth/2 and j <span class="hljs-tag">&lt; <span class="hljs-attr">width</span>/<span class="hljs-attr">2</span>)<span class="hljs-attr">:</span></span><br><span class="hljs-tag">           <span class="hljs-attr">blank_image</span>[<span class="hljs-attr">i</span>,<span class="hljs-attr">j</span>,<span class="hljs-attr">0</span>] = <span class="hljs-string">img[int(i-heigth/2),int(j+width/2),0]</span></span><br><span class="hljs-tag">           <span class="hljs-attr">blank_image</span>[<span class="hljs-attr">i</span>,<span class="hljs-attr">j</span>,<span class="hljs-attr">1</span>] = <span class="hljs-string">img[int(i-heigth/2),int(j+width/2),1]</span></span><br><span class="hljs-tag">           <span class="hljs-attr">blank_image</span>[<span class="hljs-attr">i</span>,<span class="hljs-attr">j</span>,<span class="hljs-attr">2</span>] = <span class="hljs-string">img[int(i-heigth/2),int(j+width/2),2]</span></span><br><span class="hljs-tag">       <span class="hljs-attr">if</span>(<span class="hljs-attr">i</span> &gt;</span> heigth/2 and j &gt; width/2):<br>            blank_image[i,j,0] = img[int(i-heigth/2),int(j-width/2),0]<br>          blank_image[i,j,1] = img[int(i-heigth/2),int(j-width/2),1]<br>          blank_image[i,j,2] = img[int(i-heigth/2),int(j-width/2),2]<br><br><br>blank_image = cv2.resize(blank_image,(540,540))<br>cv2.imshow('image',blank_image)<br>cv2.waitKey(0)<br>cv2.destroyAllWindows()</code>
+                                        </p>
+                                    
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -195,7 +199,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">labeling</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -203,7 +207,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/atvd3.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
@@ -227,7 +231,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Equalizer</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -235,7 +239,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/atvd4.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
@@ -259,7 +263,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Gassian + Laplacian</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -267,7 +271,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/atvd5.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
@@ -291,7 +295,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tiltshift</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -299,7 +303,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/atvd6.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
